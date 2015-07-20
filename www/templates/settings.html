@@ -1,0 +1,32 @@
+<ion-view view-title="Settings">
+    <ion-content class="main-page-bg">
+        <div class="row">
+            <div class="col">
+                <ion-toggle class="checkbox-rememberme" ng-change="gameSoundsChanged()" ng-model="modelGUI.gameSounds">Game sounds</ion-toggle>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <ion-toggle class="checkbox-rememberme" ng-change="gameMusicChanged()" ng-model="modelGUI.gameMusic">Background music</ion-toggle>
+            </div>
+        </div>
+        <!--
+        <div class="row">
+            <div class="col">
+                <ion-toggle class="checkbox-rememberme" ng-change="languageChanged()" ng-model="modelGUI.enableSpanish">Spanish</ion-toggle>
+            </div>
+        </div>
+        -->
+        <br />
+        <div class="row text-center">
+            <div class="col">
+                <span class="text-white" style="font-size: 20px;">Bricks Sum - v1.0.0</span>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col">
+                <span class="text-white trademark-label">&copy; 2015 <a href="http://www.cyansoftgames.com" class="text-cyan">Cyansoft Games</a>. All rights reserved</span>
+            </div>
+        </div>
+  </ion-content>
+</ion-view>

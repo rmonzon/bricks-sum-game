@@ -1,0 +1,349 @@
+@font-face {
+    font-family: 'Exo';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/ZcGd2dvMSgl3mHN3lKAjNw.woff) format('woff');
+}
+@font-face {
+    font-family: 'Exo';
+    font-style: normal;
+    font-weight: 500;
+    src: url(../fonts/uS3pLXRHi0kuC6qZqTorF-vvDin1pK8aKteLpeZ5c0A.woff) format('woff');
+}
+@font-face {
+    font-family: 'Exo';
+    font-style: italic;
+    font-weight: 400;
+    src: url(../fonts/BOSU_kNwP2WleVy2r3VgP6CWcynf_cDxXwCLxiixG1c.woff) format('woff');
+}
+@font-face {
+    font-family: 'Exo';
+    font-style: italic;
+    font-weight: 500;
+    src: url(../fonts/1LnzhM6dYPICwfoM9MfuCnYhjbSpvc47ee6xR_80Hnw.woff) format('woff');
+}
+
+* {
+    font-family: 'Exo', sans-serif!important;
+}
+
+.main-page-bg {
+    /*background-color: #868686;*/
+    background: url("../img/fondo.jpg") center;
+}
+
+.main-logo {
+    width: 100%;
+    height: 100%;
+}
+
+.bar .title.title-left {
+    text-align: center;
+}
+
+ion-tabs.tabs-color-active-positive .tab-item.tab-item-active, ion-tabs.tabs-color-active-positive .tab-item.active, ion-tabs.tabs-color-active-positive .tab-item.activated {
+    color: cyan;
+}
+
+.tabs-striped .tab-item.tab-item-active, .tabs-striped .tab-item.active, .tabs-striped .tab-item.activated {
+    border-color: cyan;
+}
+
+.time-animation-secs-labels {
+    -webkit-animation-duration: 1s!important;
+    animation-duration: 1s!important;
+}
+
+.timeup-progress-bar {
+    background-color: red!important;
+}
+
+.game-title1 {
+    font-size: 270%;
+    position: relative;
+    top: 40px;
+    left: 5px;
+    color: #10566B;
+    background-color: transparent;
+    text-shadow:
+    -1px -1px 1px #01678C,
+    2px 2px 1px #363636;
+}
+
+.welcome-label {
+    font-size: 15px;
+    color: whitesmoke;
+}
+
+.tabs-striped .tabs {
+    background-color: #7BA8AE;
+    border-bottom: 1px solid #7BA8AE;
+}
+
+.welcome-username {
+    font-size: 20px;
+    color: maroon;
+}
+
+.checkbox-rememberme {
+    background-color: transparent;
+    border: transparent;
+    color: whitesmoke;
+}
+
+.item-checkbox {
+    background-color: transparent;
+    border-color: transparent;
+    padding-left: 38px;
+    font-size: 13px;
+    font-weight: 500;
+    padding-top: 20px;
+    padding-right: 0;
+}
+
+.col-5 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 5%;
+    -moz-box-flex: 0;
+    -moz-flex: 0 0 5%;
+    -ms-flex: 0 0 5%;
+    flex: 0 0 5%;
+    max-width: 5%;
+}
+.col-15 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 15%;
+    -moz-box-flex: 0;
+    -moz-flex: 0 0 15%;
+    -ms-flex: 0 0 15%;
+    flex: 0 0 15%;
+    max-width: 15%;
+}
+.col-16 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 16%;
+    -moz-box-flex: 0;
+    -moz-flex: 0 0 16%;
+    -ms-flex: 0 0 16%;
+    flex: 0 0 16%;
+    max-width: 16%;
+}
+.col-40 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 40%;
+    -moz-box-flex: 0;
+    -moz-flex: 0 0 40%;
+    -ms-flex: 0 0 40%;
+    flex: 0 0 40%;
+    max-width: 40%;
+}
+
+.checkbox {
+    padding-left: 0;
+    left: 2px!important;
+}
+
+.help-button {
+    color: black;
+    position: relative;
+    top: 20px;
+    right: 8px;
+}
+
+.text-cyan {
+    color: cyan!important;
+}
+
+.text-orange {
+    color: orangered;
+}
+
+.text-white {
+    color: white!important;;
+}
+
+.text-error {
+    color: red !important;
+}
+
+.text-red {
+    color: red!important;
+}
+
+.general-users-ranking {
+    background: transparent!important;
+}
+
+.current-user-ranking {
+    background-color: #0a9ec7;
+}
+
+.ranking-number {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: white;
+}
+
+.badge-image {
+    max-width: 50px;
+    max-height: 50px;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: relative;
+    display: block;
+}
+
+.ranking-cup {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+.general-titles {
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.card-memory-game {
+    margin-top: 0!important;
+}
+
+.score-level-memory {
+    display: flex;
+}
+
+.bricks {
+    border-radius: 20px;
+    color: #3BA19F;
+    width: 100%;
+}
+
+.bricks-3-cols {
+    padding-bottom: 40%;
+    font-size: 50px;
+}
+.bricks-4-cols {
+    padding-bottom: 30%;
+    font-size: 40px;
+}
+.bricks-5-cols {
+    padding-bottom: 20%;
+    font-size: 27px;
+}
+
+.brick-num-3-cols {
+    position: relative;
+    top: 25px;
+}
+.brick-num-4-cols {
+    position: relative;
+    top: 18px;
+}
+.brick-num-5-cols {
+    position: relative;
+    top: 13px;
+}
+
+.answer-label {
+    color: cyan;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.label-before-answer {
+    color: whitesmoke;
+    font-size: 23px;
+    text-align: right;
+}
+
+.empty-field {
+    border-color: red;
+}
+
+.easy-level-memory {
+    color: lime;
+}
+
+.medium-level-memory {
+    color: #387ef5;
+}
+
+.hard-level-memory {
+    color: red;
+}
+
+/* progress bar styles */
+
+.clock-label {
+    font-size: 25px;
+    font-weight: lighter;
+    position: absolute;
+    padding-top: 6px;
+    color: white;
+    left: 42%;
+}
+
+.small-clock-label {
+    font-size: 13px;
+}
+
+.progress-bar {
+    background-color: #424d59;
+    border-radius: 3px; /* (height of inner div) / 2 + padding */
+    padding: 3px;
+}
+
+#progressbar-progress {
+    background-color: #49bfbc;
+    width: 0;
+    height: 30px;
+    border-radius: 3px;
+}
+
+/* Shaking effect on selected cells */
+
+@-webkit-keyframes thumb {
+    0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
+    10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+    30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+    40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+    50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+    70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+    80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+    90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+    100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.shake-cell
+{
+    -webkit-animation-name: thumb;
+    -webkit-transform-origin:50% 50%;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}
+
+.shake-cell-slow
+{
+    -webkit-animation-duration: 0.7s;
+}
+.shake-cell-fast
+{
+    -webkit-animation-duration: 0.1s;
+}
+
+.message-label {
+    font-size: 37px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.new-level-label {
+    color: lime;
+}
+

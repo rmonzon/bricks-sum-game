@@ -1,0 +1,50 @@
+<ion-view view-title="Bricks Sum">
+    <ion-content class="main-page-bg">
+        <div class="row">
+            <div class="col col-15">
+                <h5 class="text-white">Score: </h5>
+                <h5 class="text-white">Level: </h5>
+            </div>
+            <div class="col col-15">
+                <h5 class="text-white"><b>{{score}}</b></h5>
+                <h5 class="text-white"><b>{{level}}</b></h5>
+            </div>
+            <div class="col col-16">
+                <h5 class="text-white">Wrong: </h5>
+            </div>
+            <div class="col col-10">
+                <h5 class="text-white"><b>{{wrongAttempts}}</b></h5>
+            </div>
+
+            <div class="col col-15 text-right">
+                <h5 class="text-white" style="margin-top: 25px">Sum: </h5>
+            </div>
+            <div class="col col-30 text-center">
+                <h5 class="answer-label">{{answer}}</h5>
+            </div>
+        </div>
+
+        <div class="row" ng-show="gameStarted">
+            <div class="col text-center">
+                <div class="progress-bar">
+                    <span ng-class="timeUpClass" class="clock-label">00:{{seconds}}</span>
+                    <div id="progressbar-progress" ng-class="timeupProgressBar"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="margin: 10px;">
+            <div class="col">
+                <p ng-show="showMessage" ng-class="messageClass" class="message-label">{{messageCorrect}}</p>
+            </div>
+        </div>
+
+        <div class="row" ng-repeat="r in rows">
+            <div ng-class="widthClass" class="col" ng-repeat="c in cols">
+                <div ng-click="onClickCell(r, c)" ng-show="board[r][c].visible" ng-class="[board[r][c].class, brickClass]" class="button bricks">
+                    <p ng-class="brickNumClass">{{board[r][c].value}}</p>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

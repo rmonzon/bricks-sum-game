@@ -1,0 +1,38 @@
+<ion-view view-title="Bricks Sum">
+    <ion-content class="main-page-bg">
+        <br />
+        <div class="row text-center">
+            <div class="col">
+                <span class="text-center text-white general-titles">Registration</span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <label class="item item-input" ng-class="emptyName ? 'empty-field' : ''">
+                    <input type="text" ng-model="modelGUI.name" placeholder="Name">
+                </label>
+                <h6>* Enter your real name.</h6>
+                <label class="item item-input">
+                    <input type="number" ng-model="modelGUI.age" placeholder="Age" ng-keypress="validateNumbers($event)" ng-blur="validateAge()">
+                </label>
+                <h6>Enter your age (optional).</h6>
+                <label class="item item-input" ng-class="emptyPlayerId ? 'empty-field' : ''">
+                    <input type="text" ng-model="modelGUI.username" placeholder="Player ID" ng-blur="checkPlayerIdExist()">
+                </label>
+                <h6>* Player ID will be your identifier inside the game.</h6>
+                <label class="item item-input" ng-class="emptyPin ? 'empty-field' : ''">
+                    <input type="number" ng-model="modelGUI.pin" placeholder="PIN" ng-keypress="validateNumbers($event)">
+                </label>
+                <h6>* Your PIN must have between 4 and 8 digits.</h6>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <button ng-click="registerUser()" class="button button-block button-positive icon-left ion-person-add">Save</button>
+                <h5 class="text-center text-white">Join our worldwide community of players.</h5>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

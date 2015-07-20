@@ -1,0 +1,39 @@
+<ion-view id="ranking" view-title="Ranking">
+    <ion-content class="main-page-bg">
+        <div class="row text-center" style="margin-top: 10px">
+            <div class="col">
+                <span class="text-center text-white general-titles">Global Ranking</span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col col-33">
+                <button ng-click="goToPage('tab.dash')" class="button button-block button-royal">Back</button>
+            </div>
+            <div class="col col-33">
+                <button ng-click="refreshRanking()" class="button button-block button-positive">Refresh</button>
+            </div>
+            <div class="col col-33">
+                <button ng-click="findMe()" class="button button-block button-positive">Find Me!</button>
+            </div>
+        </div>
+
+        <div class="row text-right" ng-show="refreshing">
+            <div class="col">
+                <ion-spinner class="spinner-positive" icon="android"></ion-spinner>
+            </div>
+        </div>
+
+
+        <div class="list ranking-container">
+            <a class="item item-avatar" href="#" ng-repeat="user in listUsers" ng-class="user.user_bricksgame_playerid === userLogged.user_bricksgame_playerid ? 'current-user-ranking' : 'general-users-ranking'">
+                <img src="img/{{user.maxBadgeImg}}">
+                <h2>{{user.user_bricksgame_playerid}}</h2>
+                <p class="text-white">Max score: <b>{{user.user_bricksgame_maxscore}}</b></p>
+                <span class="ranking-number">#{{user.rankingPos}}</span>
+                <img class="ranking-cup" width="30" height="30" ng-if="$index < 3" src="img/{{urlCupImgages[$index]}}" />
+            </a>
+        </div>
+
+    </ion-content>
+</ion-view>

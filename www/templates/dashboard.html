@@ -1,0 +1,27 @@
+<ion-view view-title="Dashboard">
+  <ion-content class="padding main-page-bg">
+    <div class="row">
+      <div class="col col-34 text-right">
+        <img class="main-logo" src="img/app-icon.png" />
+      </div>
+      <div class="col col-66">
+        <span class="text-center game-title1 shake-cell shake-cell-slow">BRICKS SUM</span>
+      </div>
+    </div>
+    <div class="row text-right">
+      <div class="col">
+        <span class="welcome-label">Welcome back, <span class="welcome-username"><b>{{userLogged.user_bricksgame_playerid}}</b></span></span>
+      </div>
+    </div>
+    <br />
+    <div class="row">
+      <div class="col">
+        <p class="text-error" ng-show="updateRequired">You're using an old version of this app, in order to be able to play again you need to make an <a href="https://play.google.com/store/apps/details?id=com.ionicframework.memorygame428263">update</a></p>
+        <button ng-disabled="updateRequired" ng-click="goToPage('game')" class="button button-block button-positive icon-left ion-play">START GAME</button>
+        <button ng-click="goToPage('help')" class="button button-block button-positive icon-left ion-help">HOW TO PLAY</button>
+          <button ng-click="goToPage('badges')" class="button button-block button-positive icon-left ion-trophy">BADGES</button>
+        <button ng-click="logout()" class="button button-block button-positive icon-left ion-power">LOG OUT</button>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

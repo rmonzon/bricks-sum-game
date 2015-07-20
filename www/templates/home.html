@@ -1,0 +1,58 @@
+<ion-view view-title="Bricks Sum">
+    <ion-content class="main-page-bg">
+        <div class="row">
+            <div class="col col-34 text-right">
+                <img class="main-logo" src="img/app-icon.png" />
+            </div>
+            <div class="col col-66 text-center">
+                <span class="game-title1 shake-cell shake-cell-slow">BRICKS SUM</span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <label class="item item-input" ng-class="emptyPlayerId ? 'empty-field' : ''">
+                    <input id="playerid" type="text" ng-model="modelGUI.playerId" placeholder="Player ID">
+                </label>
+                <label class="item item-input" ng-class="emptyPin ? 'empty-field' : ''">
+                    <input id="pin" type="number" ng-model="modelGUI.pin" placeholder="PIN" ng-keypress="validateNumbers($event)">
+                </label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col col-40">
+                <div class="item item-checkbox checkbox-rememberme">
+                    <label class="checkbox"><input type="checkbox" ng-model="modelGUI.rememberMe"></label>
+                    <span class="checkbox-label">Save Player ID &nbsp;</span>
+                </div>
+            </div>
+            <div class="col col-10">
+                <a href="#" class="help-button" ng-class="showHelp ? 'ion-close-circled' : 'ion-help-circled'" ng-click="showHelpText()"></a>
+            </div>
+            <div class="col col-50">
+                <button ng-click="loginUser()" class="button button-block button-positive icon-left ion-unlocked">Login</button>
+            </div>
+        </div>
+
+        <div class="row text-center" ng-show="showHelp">
+            <div class="col">
+                <p>Select "Save player ID" to avoid typing your player ID every time you use this device. Select this option only if it's a trusted device.</p>
+            </div>
+        </div>
+
+<!--
+        <div class="row">
+            <div class="col">
+                <button ng-click="loginFacebook()" class="button button-block button-positive icon-left ion-social-facebook">Connect with Facebook</button>
+            </div>
+        </div>
+-->
+        <div class="row">
+            <div class="col">
+                <button ng-click="goToPage('register')" class="button button-block button-royal icon-left ion-person-add">Register new player</button>
+                <h5 class="text-center text-white">Join our worldwide community of players.</h5>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

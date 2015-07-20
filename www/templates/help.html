@@ -1,0 +1,32 @@
+<ion-view view-title="How to play">
+    <ion-content class="main-page-bg">
+        <div class="row">
+            <div class="col">
+                <label class="text-white">{{helpTexts[pos]}}</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <ion-slide-box on-slide-changed="navSlide($index)" auto-play="false" does-continue="true">
+                    <ion-slide>
+                        <img style="width: 100%;" src="img/help1.png">
+                    </ion-slide>
+                    <ion-slide>
+                        <img style="width: 100%" src="img/help2.png">
+                    </ion-slide>
+                    <ion-slide>
+                        <img style="width: 100%" src="img/help3.png">
+                    </ion-slide>
+                </ion-slide-box>
+            </div>
+        </div>
+
+        <!--
+        <div class="row bottom-position">
+            <div class="col">
+                <button ng-click="goToPage('tab.dash')" class="button button-block button-positive">Main menu</button>
+            </div>
+        </div>
+        -->
+    </ion-content>
+</ion-view>
