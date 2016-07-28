@@ -1,5 +1,5 @@
-# bricks-sum-game
-Web based game optimized for mobile devices
+# Bricks Sum game
+A simple educational game to keep your math skills in shape performing simple sum operations.
 
 Link in Google Play Store: https://play.google.com/store/apps/details?id=com.ionicframework.bricksum
 
